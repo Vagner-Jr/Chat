@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --bg-body: #1A1924;
+    --text-color: #fff;
+    --user-span: #00B37E;
+    --bg-write-space: #282843;
+    --bg-mensage-sent: #07847E;
+    --bg-mensage-received: #633BBC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body * {
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: var(--bg-body);
+}
+
+div#app {
+    width: 80%;
+    min-width: 280px;
+    height: 95%;
+    margin: 24px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/*header*/
+header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+header > img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+div.user {
+    flex: 1;
+}
+
+div.user h1 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+
+div.user p {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: var(--user-span);
+}
+
+div.user p span{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--user-span);
+}
+
+#btn-close {
+    border: none;
+    background: transparent;
+}
+
+/*div#day*/
+div#day p {
+    font-size: 10px;
+    text-align: center;
+}
+
+/*main*/
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+main p.user-name {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+main p.mensage {
+    width: fit-content;
+    padding: 14px;
+    margin-top: 8px;
+}
+
+#mensage-received {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#mensage-received p.mensage {
+    border-radius: 0 10px 10px 10px;
+    background: var(--bg-mensage-received);
+}
+
+#mensage-sent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#mensage-sent p.mensage {
+    border-radius: 10px 10px 0 10px;
+    background: var(--bg-mensage-sent);
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    margin-top: 18px;
+    border-radius: 50px;
+    background: var(--bg-write-space);
+}
+
+input {
+    border: none;
+    background: transparent;
+}
+
+input::placeholder {
+    color: var(--text-color);
+    opacity: 0.7;
+    font-weight: 300;
+}
+
+footer button {
+    border: none;
+    background: transparent;
+}
+
+footer img {
+    width: 24px;
+    height: 24px;
+}
+
+button:hover {
+    cursor: pointer;
+}
