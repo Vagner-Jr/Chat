@@ -140,8 +140,14 @@ footer {
 }
 
 input {
+    width: 95%;
+    height: 100%;
     border: none;
     background: transparent;
+}
+
+input:focus {
+    outline: none;
 }
 
 input::placeholder {
