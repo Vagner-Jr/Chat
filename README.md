@@ -35,8 +35,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
 - JS
+- Node.JS
 - Git e Github
 - Figma
+
+_Será necessários instalar os pacotes Express e EJS do Node.JS._
 
 ## 💻 Projeto
 
