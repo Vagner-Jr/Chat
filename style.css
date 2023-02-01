@@ -22,6 +22,7 @@ body * {
 
 body {
     height: 100vh;
+    padding: 32px 0 0;
     background: var(--bg-body);
 }
 
@@ -29,7 +30,7 @@ div#app {
     width: 80%;
     min-width: 280px;
     height: 95%;
-    margin: 24px auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -99,30 +100,30 @@ main p.user-name {
     opacity: 0.7;
 }
 
-main p.mensage {
+main p.message {
     width: fit-content;
     padding: 14px;
     margin-top: 8px;
 }
 
-#mensage-received {
+.message-received {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-#mensage-received p.mensage {
+.message-received p.message {
     border-radius: 0 10px 10px 10px;
     background: var(--bg-mensage-received);
 }
 
-#mensage-sent {
+.message-sent {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-#mensage-sent p.mensage {
+.message-sent p.message {
     border-radius: 10px 10px 0 10px;
     background: var(--bg-mensage-sent);
 }

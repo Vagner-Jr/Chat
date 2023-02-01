@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat | DevN</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./assets/chat.svg" />
     <script src="https://unpkg.com/phosphor-icons"></script>
   </head>
@@ -36,14 +36,14 @@
       </div>
 
       <main>
-        <div id="mensage-received">
+        <div class="message-received">
           <p class="user-name">Usuário - <span>11:10</span></p>
-          <p class="mensage">Mensagem recebida</p>
+          <p class="message">Mensagem recebida</p>
         </div>
 
-        <div id="mensage-sent">
-          <p class="user-name">Usuário - <span>11:20</span></p>
-          <p class="mensage">Mensagem recebida</p>
+        <div class="message-sent">
+          <p class="user-name">Usuário - 11:20</p>
+          <p class="message">Mensagem enviada</p>
         </div>
       </main>
 
@@ -53,9 +53,9 @@
           name="user-message"
           id="user-message"
           placeholder="Digite sua mensagem "
-        />
+          />
 
-        <button>
+        <button id="btn-submit">
           <img
             src="/assets/send.svg"
             alt="imagem de uma seta para enviar a mensagem"
@@ -64,6 +64,6 @@
       </footer>
     </div>
 
-    <script src="/js/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
